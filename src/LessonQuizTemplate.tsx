@@ -115,6 +115,33 @@ function LessonQuizTemplate(props: { lesson: number }) {
     ],
     [
       [
+        "What is tan(x)?",
+        "",
+        "opposite/adjacent",
+        "hypothenuse/adjacent",
+        "adjacent/hypothenuse",
+        "opposite/hypothenuse",
+        0,
+      ],
+      [
+        "What is cos(x)?",
+        "",
+        "opposite/adjacent",
+        "hypothenuse/adjacent",
+        "adjacent/hypothenuse",
+        "opposite/hypothenuse",
+        2,
+      ],
+      [
+        "What is sin(x)?",
+        "",
+        "opposite/adjacent",
+        "hypothenuse/adjacent",
+        "adjacent/hypothenuse",
+        "opposite/hypothenuse",
+        3,
+      ],
+      [
         "Find the value of tan(x).",
         lesson2_q1_img,
         "3/4",
@@ -124,7 +151,7 @@ function LessonQuizTemplate(props: { lesson: number }) {
         0,
       ],
       [
-        "Find the value of cos C",
+        "Find the value of cos(C)",
         lesson2_q2_img,
         "20/29",
         "20/21",
@@ -132,7 +159,7 @@ function LessonQuizTemplate(props: { lesson: number }) {
         "29/30",
         0,
       ],
-      ["Find value of sin A", lesson2_q3_img, "3/4", "4/5", "5/3", "5/4", 0],
+      ["Find value of sin(A)", lesson2_q3_img, "3/4", "4/5", "5/3", "5/4", 0],
       [
         "What is the correct equation to solve x?",
         lesson2_q4_img,
@@ -142,6 +169,25 @@ function LessonQuizTemplate(props: { lesson: number }) {
         "Tan(45°) = x/13",
         0,
       ],
+      [
+        "What is sin(x)/cos(x)?",
+        "",
+        "2x",
+        "tan(x)",
+        "ln(x)",
+        "How can I know",
+        1,
+      ],
+      [
+        "What is tan(x)*cos(x)?",
+        "",
+        "sin(x)",
+        "log(x)",
+        "f(x)",
+        "How can I know",
+        0,
+      ],
+      ["What is sin(x)/tan(x)?", "", "tan(x)", "sin(x)", "cos(x)", "sec(x)", 2],
     ],
     [
       ["What is the value for tan 45°?", "", "1", "2", "0", "1/2", 0],
@@ -198,13 +244,15 @@ function LessonQuizTemplate(props: { lesson: number }) {
                     : "")
                 }
                 onClick={() => {
-                  setSelectAnswer(index);
-                  setCorrectAnswer(corectAnswer + 1);
-                  correctSound();
+                  if (selectAnswer == -1) {
+                    setSelectAnswer(index);
+                    setCorrectAnswer(corectAnswer + 1);
+                    correctSound();
+                  }
                 }}
               >
                 {choice}
-                {selectAnswer != -1 ? (
+                {selectAnswer == answer ? (
                   <FontAwesomeIcon className="ml-4" icon={faCheckCircle} />
                 ) : (
                   ""
