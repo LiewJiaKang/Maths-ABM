@@ -7,13 +7,16 @@ import {
   faStar,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Lessons() {
   if (localStorage.getItem("lessonResult") == null) {
     localStorage.setItem("lessonResult", JSON.stringify([0, 0, 0]));
   }
-  const lessonResult = JSON.parse(String(localStorage.getItem("lessonResult")));
+  const [lessonResult, setLessonResult] = useState(
+    JSON.parse(String(localStorage.getItem("lessonResult"))),
+  );
   const lesson1 = lessonResult[0];
   const lesson2 = lessonResult[1];
   const lesson3 = lessonResult[2];
@@ -31,7 +34,7 @@ function Lessons() {
           onClick={() => {
             if (confirm("Delete data?")) {
               localStorage.setItem("lessonResult", JSON.stringify([0, 0, 0]));
-              window.location.reload();
+              setLessonResult([0, 0, 0]);
             }
           }}
         >

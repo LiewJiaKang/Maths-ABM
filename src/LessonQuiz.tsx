@@ -12,7 +12,7 @@ function LessonQuiz(props: { lesson: number }) {
             <>
               <h1>Quiz 1:Introduction</h1>
               <p>
-                This quiz contain 5 questions about basic of trigonometry.
+                This quiz contain 10 questions about basic of trigonometry.
                 Answer all of the questions carefully to unlock the next lesson.
               </p>
               <h2>Quick Note:</h2>
@@ -36,7 +36,7 @@ function LessonQuiz(props: { lesson: number }) {
                 <>
                   <h1>Quiz 2:Basic Trigonometry Functions</h1>
                   <p>
-                    This quiz contain 4 questions about basic trigonometry
+                    This quiz contain 10 questions about basic trigonometry
                     functions. Answer all of the questions carefully to unlock
                     the next lesson.
                   </p>
