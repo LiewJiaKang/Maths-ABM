@@ -2,6 +2,7 @@ import { faDoorOpen, faPlay } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import lesson1_pic1 from "./assets/lesson1.two_triangle.jpg";
 import { Link } from "react-router-dom";
+import ReactPlayer from "react-player";
 
 function Lesson(props: { lesson: number }) {
   const { lesson } = props;
@@ -18,7 +19,7 @@ function Lesson(props: { lesson: number }) {
           {lesson == 1 ? (
             <>
               <h1>Triangle Sides</h1>
-
+              <ReactPlayer url={"https://youtu.be/10xIh6u4xYU"}></ReactPlayer>
               <p>
                 Trigonometry is a branch of mathematics that focuses on the
                 study of triangles and their properties, particularly right
@@ -58,7 +59,9 @@ function Lesson(props: { lesson: number }) {
               {lesson == 2 ? (
                 <>
                   <h1>Basic Trigonometric Functions: Sin, Cos, and Tan</h1>
-
+                  <ReactPlayer
+                    url={"https://youtu.be/vhGkfnDO_n8"}
+                  ></ReactPlayer>
                   <p>
                     Trigonometry, a mathematical discipline centered on triangle
                     measurements, introduces three primary functions: sine
@@ -103,11 +106,9 @@ function Lesson(props: { lesson: number }) {
                 <>
                   <h1>Trigonometric Values of Special Angles</h1>
                   <div>
-                    <h2>
-                      Trigonometric Values for Special Angles Using Pythagoras'
-                      Theorem
-                    </h2>
-
+                    <ReactPlayer
+                      url={"https://youtu.be/ZPK3qA3WR3g"}
+                    ></ReactPlayer>
                     <div>
                       <h3>0° (Horizontal Line)</h3>
                       <p>

@@ -8,6 +8,7 @@ import "@fontsource/chakra-petch";
 import Lesson from "./Lesson.tsx";
 import LessonQuiz from "./LessonQuiz.tsx";
 import LessonQuizTemplate from "./LessonQuizTemplate.tsx";
+import Visualizer from "./visualizer.tsx";
 
 const router = createBrowserRouter([
   {
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
   {
     path: "/lessons/lesson3/quiz/start",
     element: <LessonQuizTemplate lesson={3} />,
+  },
+  {
+    path: "/visualizer",
+    element: <Visualizer />,
   },
 ]);
 

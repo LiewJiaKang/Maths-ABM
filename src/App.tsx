@@ -1,4 +1,4 @@
-import { faPlay } from "@fortawesome/free-solid-svg-icons";
+import { faCalculator, faPlay } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
@@ -18,9 +18,17 @@ function App() {
       <div className="flex h-1/2 w-full flex-col items-center justify-center lg:h-full lg:w-1/2">
         <Link
           to={`/lessons`}
-          className="cursor-pointer rounded-md bg-cyan-600 p-2 text-white hover:bg-cyan-500"
+          className="cursor-pointer rounded-md bg-cyan-600 text-2xl text-white hover:bg-cyan-500 h-28 flex text-center justify-center items-center px-2 m-2 w-2/5"
         >
-          <FontAwesomeIcon icon={faPlay} /> Start lesson
+          <FontAwesomeIcon icon={faPlay} />
+          <p className="ml-4">Start lesson</p>
+        </Link>
+        <Link
+          to={`/visualizer`}
+          className="cursor-pointer rounded-md bg-cyan-600 text-2xl text-white hover:bg-cyan-500 h-28 flex text-center justify-center items-center px-2 m-2 w-2/5"
+        >
+          <FontAwesomeIcon icon={faCalculator} />
+          <p className="ml-4">Trigonometry Calculator</p>
         </Link>
       </div>
     </div>
