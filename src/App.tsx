@@ -18,17 +18,17 @@ function App() {
       <div className="flex h-1/2 w-full flex-col items-center justify-center lg:h-full lg:w-1/2">
         <Link
           to={`/lessons`}
-          className="cursor-pointer rounded-md bg-cyan-600 text-2xl text-white hover:bg-cyan-500 h-28 flex text-center justify-center items-center px-2 m-2 w-2/5"
+          className="cursor-pointer rounded-md bg-cyan-600 text-2xl text-white hover:bg-cyan-500 h-28 flex text-center justify-center items-center px-2 m-2 w-4/5 lg:w-2/5"
         >
           <FontAwesomeIcon icon={faPlay} />
           <p className="ml-4">Start lesson</p>
         </Link>
         <Link
           to={`/visualizer`}
-          className="cursor-pointer rounded-md bg-cyan-600 text-2xl text-white hover:bg-cyan-500 h-28 flex text-center justify-center items-center px-2 m-2 w-2/5"
+          className="cursor-pointer rounded-md bg-cyan-600 text-2xl text-white hover:bg-cyan-500 h-28 flex text-center justify-center items-center px-2 m-2 w-4/5 lg:w-2/5"
         >
           <FontAwesomeIcon icon={faCalculator} />
-          <p className="ml-4">Trigonometry Calculator</p>
+          <p className="ml-4">Trigonometry Visualizer</p>
         </Link>
       </div>
     </div>

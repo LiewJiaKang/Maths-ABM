@@ -20,6 +20,13 @@ function Lesson(props: { lesson: number }) {
             <>
               <h1>Triangle Sides</h1>
               <ReactPlayer url={"https://youtu.be/10xIh6u4xYU"}></ReactPlayer>
+              <br />
+              <iframe
+                src="https://drive.google.com/file/d/1Lcas0Bus7UMe-Vwfz4_PAURrvGKkXPiI/preview"
+                width="640"
+                height="480"
+                allow="autoplay"
+              ></iframe>
               <p>
                 Trigonometry is a branch of mathematics that focuses on the
                 study of triangles and their properties, particularly right
@@ -62,6 +69,13 @@ function Lesson(props: { lesson: number }) {
                   <ReactPlayer
                     url={"https://youtu.be/vhGkfnDO_n8"}
                   ></ReactPlayer>
+                  <br />
+                  <iframe
+                    src="https://drive.google.com/file/d/1bt-6WuvtCZ7BfpjFZzSs39qt2qFel_PG/preview"
+                    width="640"
+                    height="480"
+                    allow="autoplay"
+                  ></iframe>
                   <p>
                     Trigonometry, a mathematical discipline centered on triangle
                     measurements, introduces three primary functions: sine
@@ -109,6 +123,13 @@ function Lesson(props: { lesson: number }) {
                     <ReactPlayer
                       url={"https://youtu.be/ZPK3qA3WR3g"}
                     ></ReactPlayer>
+                    <br />
+                    <iframe
+                      src="https://drive.google.com/file/d/1bt-6WuvtCZ7BfpjFZzSs39qt2qFel_PG/preview"
+                      width="640"
+                      height="480"
+                      allow="autoplay"
+                    ></iframe>
                     <div>
                       <h3>0° (Horizontal Line)</h3>
                       <p>
