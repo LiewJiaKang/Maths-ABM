@@ -24,16 +24,21 @@ function Visualizer() {
           className={`h-0 w-[40vmin] translate-y-[calc(-0.25rem-20vmin)] rotate-[${-rotateAngle}deg]`}
         >
           <div className="w-[20vmin] border-t-4 translate-x-full border-red-600 translate-y-[calc(-50%)]"></div>
-          <div className="border border-black w-4 h-4 rounded-full bg-sky-400 translate-x-[calc(40vmin-0.5rem)] translate-y-[-0.75rem] select-none">
+          <div className="border border-black w-4 h-4 rounded-full bg-sky-400 translate-x-[calc(40vmin-0.5rem)] translate-y-[-0.75rem]">
             <div
               className={`h-0 w-0 translate-y-[calc(0.5rem-50%)] rotate-[${rotateAngle}deg]`}
             >
               <div
-                className={`h-[${Math.abs(Math.floor(Math.sin((rotateAngle / 180) * Math.PI) * 20))}vmin] border-l-4 border-green-600 ${rotateAngle < 0 ? "translate-y-[calc(-100%)]" : ""}`}
+                className={`h-[${Math.abs(Math.floor(Math.sin((rotateAngle / 180) * Math.PI) * 20))}vmin] border-l-4 border-green-600 ${rotateAngle < 0 ? "translate-y-[calc(0.25rem-100%)]" : ""}`}
               />
             </div>
           </div>
-          <div className="border border-black w-4 h-4 rounded-full bg-sky-400 translate-x-[calc(20vmin-0.5rem)] translate-y-[-1.75rem]"></div>
+          <div className="border border-black w-4 h-4 rounded-full bg-sky-400 translate-x-[calc(20vmin-0.5rem)] translate-y-[-1.75rem]">
+            <p className={`rotate-[${rotateAngle}deg] font-bold translate-y-6`}>
+              {rotateAngle}
+              {"°"}
+            </p>
+          </div>
         </div>
 
         <div
@@ -92,28 +97,32 @@ function Visualizer() {
             <td>
               {Math.round(Math.sin((rotateAngle / 180) * Math.PI) * 10000) /
                 10000}
-              <div
-                className="h-2 bg-yellow-600"
-                style={{
-                  width: `${
-                    Math.round(Math.sin((rotateAngle / 180) * Math.PI) * 50) +
-                    50
-                  }%`,
-                }}
-              ></div>
+              <div className="h-2 w-full border border-yellow-600">
+                <div
+                  className="h-2 bg-yellow-600"
+                  style={{
+                    width: `${
+                      Math.round(Math.sin((rotateAngle / 180) * Math.PI) * 50) +
+                      50
+                    }%`,
+                  }}
+                />
+              </div>
             </td>
             <td>
               {Math.round(Math.cos((rotateAngle / 180) * Math.PI) * 10000) /
                 10000}
-              <div
-                className="h-2 bg-rose-600"
-                style={{
-                  width: `${
-                    Math.round(Math.cos((rotateAngle / 180) * Math.PI) * 50) +
-                    50
-                  }%`,
-                }}
-              ></div>
+              <div className="h-2 w-full border border-rose-600">
+                <div
+                  className="h-2 bg-rose-600"
+                  style={{
+                    width: `${
+                      Math.round(Math.cos((rotateAngle / 180) * Math.PI) * 50) +
+                      50
+                    }%`,
+                  }}
+                />
+              </div>
             </td>
             <td>
               {Math.tan((rotateAngle / 180) * Math.PI) < -10000000
@@ -123,15 +132,17 @@ function Visualizer() {
                       Math.tan((rotateAngle / 180) * Math.PI) * 10000,
                     ) / 10000
                   : "Infinity"}
-              <div
-                className="max-w-full h-2 bg-emerald-600"
-                style={{
-                  width: `${
-                    Math.round(Math.tan((rotateAngle / 180) * Math.PI) * 20) +
-                    50
-                  }%`,
-                }}
-              ></div>
+              <div className="h-2 w-full border border-emerald-600">
+                <div
+                  className="max-w-full h-2 bg-emerald-600"
+                  style={{
+                    width: `${
+                      Math.round(Math.tan((rotateAngle / 180) * Math.PI) * 20) +
+                      50
+                    }%`,
+                  }}
+                />
+              </div>
             </td>
           </tr>
         </table>

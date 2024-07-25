@@ -19,13 +19,15 @@ function Lesson(props: { lesson: number }) {
           {lesson == 1 ? (
             <>
               <h1>Triangle Sides</h1>
-              <ReactPlayer url={"https://youtu.be/10xIh6u4xYU"}></ReactPlayer>
+              <ReactPlayer
+                url={"https://youtu.be/10xIh6u4xYU"}
+                width="100%"
+              ></ReactPlayer>
               <br />
               <iframe
-                src="https://drive.google.com/file/d/1Lcas0Bus7UMe-Vwfz4_PAURrvGKkXPiI/preview"
-                width="640"
-                height="480"
-                allow="autoplay"
+                src="https://docs.google.com/presentation/d/e/2PACX-1vTo7vLIgdMy-iS4_Scd_H9aH8HtO3qBdU6LYVmkAiBfFxdk-k5H8a7P_bkbUAI5fQ/embed?start=false&loop=false&delayms=3000"
+                width="100%"
+                height="400px"
               ></iframe>
               <p>
                 Trigonometry is a branch of mathematics that focuses on the
@@ -68,13 +70,13 @@ function Lesson(props: { lesson: number }) {
                   <h1>Basic Trigonometric Functions: Sin, Cos, and Tan</h1>
                   <ReactPlayer
                     url={"https://youtu.be/vhGkfnDO_n8"}
+                    width="100%"
                   ></ReactPlayer>
                   <br />
                   <iframe
-                    src="https://drive.google.com/file/d/1bt-6WuvtCZ7BfpjFZzSs39qt2qFel_PG/preview"
-                    width="640"
-                    height="480"
-                    allow="autoplay"
+                    src="https://docs.google.com/presentation/d/e/2PACX-1vTzwsDDUhlTwyrfziYaDuE_mxe2mWBWhsJE6C5YfZr1e0Gv7cfLFVMksB7ARfokNw/embed?start=false&loop=false&delayms=3000"
+                    width="100%"
+                    height="400px"
                   ></iframe>
                   <p>
                     Trigonometry, a mathematical discipline centered on triangle
@@ -122,13 +124,13 @@ function Lesson(props: { lesson: number }) {
                   <div>
                     <ReactPlayer
                       url={"https://youtu.be/ZPK3qA3WR3g"}
+                      width="100%"
                     ></ReactPlayer>
                     <br />
                     <iframe
-                      src="https://drive.google.com/file/d/1bt-6WuvtCZ7BfpjFZzSs39qt2qFel_PG/preview"
-                      width="640"
-                      height="480"
-                      allow="autoplay"
+                      src="https://docs.google.com/presentation/d/e/2PACX-1vQ85NS7HUth_pVi-tjZqj220pkPVHBeUR0ArHZ_M8MpuWpk3h4rDG_52jkJJgvmEA/embed?start=false&loop=false&delayms=3000"
+                      width="100%"
+                      height="400px"
                     ></iframe>
                     <div>
                       <h3>0° (Horizontal Line)</h3>
